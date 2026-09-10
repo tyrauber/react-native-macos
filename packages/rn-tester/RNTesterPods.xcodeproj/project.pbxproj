@@ -66,6 +66,7 @@
 		ACC52F4A299ECB7B002A2B0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACC52F48299ECB7B002A2B0B /* Main.storyboard */; };
 		ACC52F6C299ECDDA002A2B0B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ACC52F6B299ECDDA002A2B0B /* Info.plist */; };
 		ACDBF0D529B2BF0A00EEBD9E /* RNTesterUnitTestsBundle.js in Resources */ = {isa = PBXBuildFile; fileRef = E7DB20B322B2BAA4005AC45F /* RNTesterUnitTestsBundle.js */; };
+		B1A0C0DF29B1318B0003586F /* RCTVirtualViewComponentViewKeyViewLoopTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = B1A0C0DE29B1318B0003586F /* RCTVirtualViewComponentViewKeyViewLoopTests.mm */; };
 		BEB82277FE76227A15DED9EF /* libPods-RNTesterIntegrationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77E101C7D8E22A8E70EE76DF /* libPods-RNTesterIntegrationTests.a */; };
 		CD10C7A5290BD4EB0033E1ED /* RCTEventEmitterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD10C7A4290BD4EB0033E1ED /* RCTEventEmitterTests.m */; };
 		D626973C1F0D4ABDE2F9028A /* libPods-RNTesterUnitTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8DE57E3292D41E28251988A /* libPods-RNTesterUnitTests.a */; };
@@ -188,6 +189,7 @@
 		ACC52F55299ECB8A002A2B0B /* RNTester-macOSUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RNTester-macOSUnitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC52F62299ECB97002A2B0B /* RNTester-macOSIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RNTester-macOSIntegrationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACC52F6B299ECDDA002A2B0B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1A0C0DE29B1318B0003586F /* RCTVirtualViewComponentViewKeyViewLoopTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RCTVirtualViewComponentViewKeyViewLoopTests.mm; sourceTree = "<group>"; };
 		CAEBC2296BB4BDDDCAAF4404 /* Pods-RNTester-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNTester-macOS.release.xcconfig"; path = "Target Support Files/Pods-RNTester-macOS/Pods-RNTester-macOS.release.xcconfig"; sourceTree = "<group>"; };
 		CD10C7A4290BD4EB0033E1ED /* RCTEventEmitterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTEventEmitterTests.m; sourceTree = "<group>"; };
 		D74056A5352F0925816E50E0 /* libPods-RNTester.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNTester.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -463,6 +465,7 @@
 		ACC52F56299ECB8A002A2B0B /* RNTester-macOSUnitTests */ = {
 			isa = PBXGroup;
 			children = (
+				B1A0C0DE29B1318B0003586F /* RCTVirtualViewComponentViewKeyViewLoopTests.mm */,
 			);
 			path = "RNTester-macOSUnitTests";
 			sourceTree = "<group>";
@@ -1319,6 +1322,7 @@
 				AC73FCF029B1318E0003586F /* RCTBlobManagerTests.m in Sources */,
 				AC73FCFF29B131C10003586F /* RCTMethodArgumentTests.m in Sources */,
 				AC30658829B14F38007A839A /* RCTComponentPropsTests.m in Sources */,
+				B1A0C0DF29B1318B0003586F /* RCTVirtualViewComponentViewKeyViewLoopTests.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
