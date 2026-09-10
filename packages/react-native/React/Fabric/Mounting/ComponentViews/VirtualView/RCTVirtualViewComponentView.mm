@@ -173,6 +173,17 @@ static BOOL sIsAccessibilityUsed = NO;
   [self _unhideIfNeeded];
   return [super accessibilityHitTest:point];
 }
+
+- (BOOL)canBecomeKeyView
+{
+  // AppKit's automatic key view loop consults this directly while walking Tab
+  // order, and its default implementation returns NO for a hidden view before
+  // ever calling -acceptsFirstResponder. Without this override, a fully
+  // hidden VirtualView is permanently skipped by keyboard navigation, even
+  // though -acceptsFirstResponder above would otherwise unhide it on demand.
+  [self _unhideIfNeeded];
+  return [super canBecomeKeyView];
+}
 #endif // macOS]
 
 - (void)prepareForRecycle
